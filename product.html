@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--Navbar section-->
+<div class="bg-green-400 p-3 flex justify-between items-center shadow-2xl sticky top-0 z-10">
+    <h2 class="text-2xl font-semibold">Greenden</h2>
+    <div class="md:hidden">
+        <i class="fa-solid fa-bars " id="sideMenuIcon"></i>
+
+    </div>
+
+
+
+    <div class="md:flex gap-2 hidden">
+        <a href="index.html" class="font-normal hover:underline hover:text-black cursor-pointer">Home</a>
+        <a  class="font-normal  hover:underline hover:text-black cursor-pointer">Products</a>
+        <a class="font-normal  hover:underline hover:text-black cursor-pointer">Contact</a>
+
+    </div>
+
+</div>
+<!--Side nav-->
+<div class="flex flex-col gap-10 items-center bg-green-400 z-10 top-0  fixed p-3  transition-all duration-1000" id="sideNavbar" style="width: 50%; height: 100vh; right: -50%;                                                                        %;">
+    <p class="text-right " style="margin-left: 200px; cursor: pointer;" id="closeSideNav">X</p>
+    <a class="font-normal hover:underline hover:text-black cursor-pointer">Home</a>
+    <a href="product.html" class="font-normal  hover:underline hover:text-black cursor-pointer">Products</a>
+<a href="contact.html" class="font-normal  hover:underline hover:text-black cursor-pointer">Contact</a>
+  
+</div>
+
+<!--products_list-->
+<div class="text-center">
+    <h2 class="text-xl font-bold mt-4 mb-4">Our Products</h2>
+    <div class="">
+        <div>
+            <input type="text" class="pl-1 pr-1" id="search" style="width: 500px ; border: black solid 2px ; border-radius: 5px;" placeholder="Search products here...">
+        </div>
+        
+
+        <div class="md:grid-cols-4 grid grid-cols-2 mt-5" id="product_list">
+            <div class="mb-2">
+                <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i1.jpg" alt="image1" style="width: 200px; height: 280px;">
+                <h2 class=" font-semibold">Ket's plant</h2>
+                <p class="text-sm">$20</p>
+            </div>
+            <div>
+                <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i2.jpg" alt="image2" style="width: 200px; height: 280px;">
+                <h2 class="font-semibold">Jamican's kony</h2>
+                <p class="text-sm">$30</p>
+            </div>
+            <div>
+                <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i3.jpg" alt="image3" style="width: 200px; height: 280px;">
+                <h2 class="font-semibold">Kory kluvo</h2>
+                <p class="text-sm">$40</p>
+            </div>
+            <div> <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i4.jpg" alt="image4" style="width: 200px; height: 280px;">
+                <h2 class="font-semibold">Pongadu pura</h2>
+                <p class="text-sm">$20</p>
+            </div>
+            <div>
+                <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i3.jpg" alt="image3" style="width: 200px; height: 280px;">
+                <h2 class="font-semibold">Kory kluvo</h2>
+                <p class="text-sm">$40</p>
+            </div>
+            <div>
+                <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i1.jpg" alt="image1" style="width: 200px; height: 280px;">
+                <h2 class=" font-semibold">Ket and jones</h2>
+                <p class="text-sm">$20</p>
+            </div>
+            <div>
+                <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                    src="./images/i2.jpg" alt="image2" style="width: 200px; height: 280px;">
+                <h2 class="font-semibold">Kuvi Plant</h2>
+                <p class="text-sm">$30</p>
+            </div>
+            <div> <img class=" border border-black inline hover:shadow-2xl  transform hover:-translate-y-2"
+                src="./images/i4.jpg" alt="image4" style="width: 200px; height: 280px;">
+            <h2 class="font-semibold">Rodrigo plant</h2>
+            <p class="text-sm">$20</p>
+        </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="p-10 bg-green-400 mt-4 m-1  gap-2 flex flex-col justify-start items-start">
+        <h2 class="text-2xl text-black font-semibold">Greenden</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquid.</p>
+        <p>@2024 greendon.com</p>
+    </div>
+    <script src="script-product.js"></script>
